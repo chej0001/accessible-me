@@ -89,3 +89,8 @@ form button {
   left: 1rem;
   top: 1rem;
 }
+
+/* Darker links make the email and phone easier to read on the grey background. */
+.owner a {
+  color: #000066;
+}
