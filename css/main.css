@@ -69,3 +69,23 @@ form button {
 .site-footer {
   padding: 2rem 0;
 }
+
+/*
+  I added a skip link for keyboard users.
+  It stays outside the visible page until it receives keyboard focus.
+*/
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 0.75rem 1rem;
+  z-index: 1000;
+}
+
+/* When the user presses Tab, the skip link becomes visible. */
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
